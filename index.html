@@ -1,153 +1,443 @@
-export default function GitHubBlogDesign() {
-  const blogSections = [
-    {
-      title: "SEO & Digital Marketing",
-      desc: "Case studies, ranking experiments, topical authority strategies, and practical SEO systems that actually move traffic.",
-    },
-    {
-      title: "Travel & Lifestyle Blogs",
-      desc: "Destination storytelling, itinerary structures, travel SEO, and monetization strategies for travel creators.",
-    },
-    {
-      title: "AI Content & Automation",
-      desc: "Workflows using AI tools, automation systems, prompt engineering, and scalable publishing frameworks.",
-    },
-    {
-      title: "Business Growth",
-      desc: "Content funnels, lead generation, personal branding, and scalable online business strategies.",
-    },
-  ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative px-8 py-24 lg:px-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-transparent to-cyan-500/20 blur-3xl" />
+<title>Uniform Supplier UAE</title>
 
-        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2 mb-6 text-sm backdrop-blur-md">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              GitHub Portfolio & Blog Showcase
-            </div>
+<style>
 
-            <h1 className="text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6">
-              Build.
-              <br />
-              Share.
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                Grow Online.
-              </span>
-            </h1>
-
-            <p className="text-gray-300 text-lg leading-relaxed max-w-xl mb-8">
-              A modern GitHub-inspired portfolio layout crafted for bloggers,
-              SEO professionals, developers, and creators who want a sharp,
-              premium online presence.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <button className="px-7 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300 shadow-2xl">
-                Explore Blogs
-              </button>
-
-              <button className="px-7 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition duration-300">
-                View GitHub
-              </button>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[32px] p-6 shadow-[0_0_80px_rgba(168,85,247,0.25)]">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                <div className="w-3 h-3 rounded-full bg-green-400"></div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-black/40 rounded-2xl p-5 border border-white/5">
-                  <p className="text-sm text-cyan-400 mb-2">Latest Project</p>
-                  <h3 className="text-2xl font-bold mb-2">
-                    SEO Blog Automation
-                  </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    AI-assisted publishing workflow designed to scale content
-                    production without losing search intent.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-br from-purple-500/20 to-transparent border border-purple-500/20 rounded-2xl p-5">
-                    <h4 className="text-3xl font-black">120+</h4>
-                    <p className="text-gray-400 text-sm mt-1">Published Blogs</p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-cyan-500/20 to-transparent border border-cyan-500/20 rounded-2xl p-5">
-                    <h4 className="text-3xl font-black">85%</h4>
-                    <p className="text-gray-400 text-sm mt-1">SEO Growth</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Sections */}
-      <section className="px-8 pb-24 lg:px-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-14">
-            <p className="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-4">
-              Blog Categories
-            </p>
-            <h2 className="text-4xl lg:text-5xl font-black leading-tight max-w-3xl">
-              Content Sections Designed To Look Premium. Not Generic.
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {blogSections.map((section, index) => (
-              <div
-                key={index}
-                className="group relative bg-white/5 border border-white/10 rounded-[28px] p-8 hover:-translate-y-2 transition-all duration-500 overflow-hidden"
-              >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-purple-500/10 to-cyan-500/10" />
-
-                <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-500 mb-6 flex items-center justify-center text-xl font-black">
-                    0{index + 1}
-                  </div>
-
-                  <h3 className="text-2xl font-bold mb-4">{section.title}</h3>
-
-                  <p className="text-gray-400 leading-relaxed text-base">
-                    {section.desc}
-                  </p>
-
-                  <button className="mt-8 text-cyan-400 font-semibold group-hover:translate-x-2 transition duration-300">
-                    Read More →
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 py-10 px-8 lg:px-20">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
-          <h3 className="text-2xl font-black tracking-tight">
-            GitHub Blog Design.
-          </h3>
-
-          <p className="text-gray-500 text-sm text-center lg:text-right">
-            Minimal. Bold. Conversion-focused.
-          </p>
-        </div>
-      </footer>
-    </div>
-  );
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:Arial, sans-serif;
+background:#ffffff;
+color:#0f172a;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+padding:80px 0;
+}
+
+.hero-left{
+flex:1;
+min-width:300px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+border-radius:50px;
+background:#eff6ff;
+border:1px solid #bfdbfe;
+color:#2563eb;
+font-size:14px;
+margin-bottom:25px;
+font-weight:bold;
+}
+
+.hero-left h1{
+font-size:72px;
+line-height:1.1;
+font-weight:900;
+margin-bottom:25px;
+}
+
+.highlight{
+color:#2563eb;
+}
+
+.hero-left p{
+font-size:18px;
+color:#475569;
+max-width:600px;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+border:none;
+border-radius:14px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.primary{
+background:#2563eb;
+color:white;
+}
+
+.primary:hover{
+transform:translateY(-5px);
+}
+
+.secondary{
+background:white;
+border:1px solid #cbd5e1;
+color:#0f172a;
+}
+
+.secondary:hover{
+background:#f8fafc;
+}
+
+/* CARD */
+
+.hero-card{
+flex:1;
+min-width:320px;
+background:white;
+padding:35px;
+border-radius:30px;
+border:1px solid #e2e8f0;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.card-top{
+display:flex;
+gap:10px;
+margin-bottom:25px;
+}
+
+.circle{
+width:14px;
+height:14px;
+border-radius:50%;
+}
+
+.red{
+background:#ef4444;
+}
+
+.yellow{
+background:#facc15;
+}
+
+.green{
+background:#22c55e;
+}
+
+.project-box{
+background:#f8fafc;
+padding:25px;
+border-radius:20px;
+margin-bottom:25px;
+}
+
+.project-box h3{
+font-size:30px;
+margin:15px 0;
+}
+
+.project-box p{
+color:#64748b;
+}
+
+.stats{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.stat{
+flex:1;
+min-width:120px;
+background:#f8fafc;
+padding:20px;
+border-radius:18px;
+}
+
+.stat h2{
+font-size:40px;
+margin-bottom:5px;
+color:#2563eb;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 0;
+}
+
+.section-sub{
+color:#2563eb;
+text-transform:uppercase;
+letter-spacing:3px;
+font-size:14px;
+margin-bottom:20px;
+font-weight:bold;
+}
+
+.section-title{
+font-size:55px;
+font-weight:900;
+max-width:800px;
+line-height:1.2;
+margin-bottom:60px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:white;
+padding:35px;
+border-radius:25px;
+border:1px solid #e2e8f0;
+transition:0.4s;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.number{
+width:60px;
+height:60px;
+border-radius:18px;
+background:#2563eb;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+font-size:20px;
+margin-bottom:25px;
+}
+
+.service-card h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.service-card p{
+color:#64748b;
+margin-bottom:25px;
+}
+
+.read-more{
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px 0;
+border-top:1px solid #e2e8f0;
+text-align:center;
+color:#64748b;
+margin-top:80px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-left h1{
+font-size:50px;
+}
+
+.section-title{
+font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<div class="badge">
+Professional Uniform Manufacturer UAE
+</div>
+
+<h1>
+Premium<br>
+Workwear &<br>
+<span class="highlight">Custom Uniforms</span>
+</h1>
+
+<p>
+High-quality industrial uniforms, hospitality wear, medical scrubs, and customized corporate uniforms designed for durability, comfort, and professional branding.
+</p>
+
+<div class="buttons">
+<button class="btn primary">Explore Products</button>
+<button class="btn secondary">Contact Us</button>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="hero-card">
+
+<div class="card-top">
+<div class="circle red"></div>
+<div class="circle yellow"></div>
+<div class="circle green"></div>
+</div>
+
+<div class="project-box">
+
+<p>Featured Product</p>
+
+<h3>Industrial Safety Uniforms</h3>
+
+<p>
+Heavy-duty workwear engineered for construction, logistics, warehouse, and industrial environments across the UAE.
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Corporate Clients</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<p class="section-sub">
+Our Uniform Categories
+</p>
+
+<h2 class="section-title">
+Professional Uniform Solutions Built For Every Industry.
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<div class="number">01</div>
+
+<h3>Corporate Uniforms</h3>
+
+<p>
+Modern office uniforms tailored for branding, professionalism, and employee comfort.
+</p>
+
+<a href="#" class="read-more">
+Read More →
+</a>
+
+</div>
+
+<div class="service-card">
+
+<div class="number">02</div>
+
+<h3>Industrial Workwear</h3>
+
+<p>
+Durable industrial safety uniforms designed for demanding work environments.
+</p>
+
+<a href="#" class="read-more">
+Read More →
+</a>
+
+</div>
+
+<div class="service-card">
+
+<div class="number">03</div>
+
+<h3>Hospitality Uniforms</h3>
+
+<p>
+Elegant hotel and restaurant uniforms that elevate staff appearance and brand image.
+</p>
+
+<a href="#" class="read-more">
+Read More →
+</a>
+
+</div>
+
+<div class="service-card">
+
+<div class="number">04</div>
+
+<h3>Medical Scrubs</h3>
+
+<p>
+Comfortable and hygienic medical uniforms built for healthcare professionals.
+</p>
+
+<a href="#" class="read-more">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+Professional Uniform Supplier UAE © 2026
+</footer>
+
+</div>
+
+</body>
+</html>
